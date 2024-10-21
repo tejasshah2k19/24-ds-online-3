@@ -1,0 +1,172 @@
+Data Structure :-
+    data Structure is a way to organize,store and process data in a computer /5.
+
+
+    no new language 
+    no new programming 
+
+    data Structure is not a programming language 
+
+    1) time complexity 
+    2) space complexity 
+
+
+covid -> announce ->    
+    [center] : 1000 
+    [1][10min] 
+    10,000 minutes 
+    =>167 hrs 
+    =>7 days 
+
+    5,00,000 
+    => XXX 
+
+calc -> int a,int b,int ans;
+    run : 2 second 
+
+    2,00,000 => user =>  15second -> 
+
+    server -> capacity -> 
+
+    facebook -> 2Lac -> 20Lac -> 2CR
+
+
+    programming language -> c c++ java -> 
+    single user -> speed -> 
+    multi user -> speed -> divide -> slow 
+
+----------------------------------------------------------
+
+computer -> 
+                ram : memory 
+                cpu : processor 
+
+for(i=1;i<=100;i++){
+    //xyz 
+}
+
+
+
+time complexity -> time / instruction / process 
+space complexity -> memory 
+-----------------------------------------------------------
+
+
+memory --- cpu 
+
+variable -> byte -> sum
+
+
+int main(){
+
+    int a;//TC->2 byte |GCC-> 4 byte 
+    int b;//4
+    int ans;//4
+    a  = 10; //200 // 25000
+    b = 20;  // 500  // 25000 
+    ans = a+b;
+    printf("%d",ans);
+    return 0;
+}
+
+time: -> cpu -> cycle -> instruction cycle -> execute -> 8 {10} -> constant 
+space: memory -> 3 variable -> size -> 12byte  
+
+
+int => 4 byte 
+int main(){
+
+    int num=5;//1
+    int i; //1
+
+    //5
+    for(i=1;i<=num;i++){//
+        printf(" %d",i);//4 {1,2,3,4,5}
+    }
+    return 0;//1
+}
+
+ans:
+memory : 8byte 
+time   : 5
+
+
+int => 4 byte 
+int main(){
+
+    int num=10;//1
+    int i; //1
+
+    //10
+    for(i=1;i<=num;i++){//
+        printf(" %d",i);//4 {1,2,3,4,5}
+    }
+    return 0;//1
+}
+
+2) 
+memory : 8byte 
+time   : 10 
+
+
+
+
+int => 4 byte 
+int main(){
+
+    int num=100;//1
+    int i; //1
+
+    //100
+    for(i=1;i<=num;i++){//
+        printf(" %d",i);//4 {1,2,3,4,5}
+    }
+    return 0;//1
+}
+
+memory : 8 
+time   : 100
+
+
+25000 -2020   7000 
+50000 -2021   14000 
+100000 -2022  28000 
+
+2x -> year 
+
+num -> n -> 
+---------------------------------------------------------------------------
+
+                                    Data Structure 
+        Primitive DataStructure                                     Non Primitive DataStructure 
+ int float char boolean                             Linear DataStructure                    Non Linear DataStructure
+                                                    Array                                   Tree 
+                                                    Stack                                   Graph 
+                                                    Queue
+                                                    LinkedList     
+
+Sorting 
+Searching 
+
+Hashing*** 
+-----------------------------------------------------------------------------
+
+function -> 
+    1)  no return   no argument 
+    2)  no return   argument 
+    3)  return      no argument 
+    4)  return      argument 
+    5)  pointer function  -> MVR 
+
+
+
+function -> code -> name -> block -> call 
+
+
+https://youtu.be/OxyD71fFT5E?si=dmjQl74ck0OdWsU0
+
+---------------------------------------------------------------------------
+1) create 1 function that accept 2 numbers and print max from it. 
+2) create 1 function that read 2 numbers and print squre of both numbers. 
+---------------------------------------------------------------------------
+Array 
