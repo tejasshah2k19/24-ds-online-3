@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 
 
 
@@ -9,7 +9,8 @@ int main(){
     int i;
     char gender[10]; // %s  
     printf("\nEnter gender");
-    scanf("%s",&gender);//male 
+    // scanf("%s",&gender);//male
+    gets(gender);
     //null character \0 
     printf("\nGender = %s",gender);//royal royal12 male 
 

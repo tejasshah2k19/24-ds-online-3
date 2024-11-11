@@ -268,3 +268,12 @@ address ?
 ans : character Array 
 
 -------------------------------------------------------------------
+
+take a string from the user and print how many characters are in the string ? 
+legth of the string 
+
+char str[100];
+
+str => royal
+5 
+-----------------------------------------------------------------                    
