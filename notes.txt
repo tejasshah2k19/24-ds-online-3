@@ -169,4 +169,102 @@ https://youtu.be/OxyD71fFT5E?si=dmjQl74ck0OdWsU0
 1) create 1 function that accept 2 numbers and print max from it. 
 2) create 1 function that read 2 numbers and print squre of both numbers. 
 ---------------------------------------------------------------------------
-Array 
+
+void max(int a,int b){
+    if(a > b){
+        printf("%d max",a);
+    }else{
+        printf(" %d max",b); 
+    }
+}
+
+
+void square(){
+    int a;
+    int b; 
+    printf("\nEnter two numbers");
+    scanf("%d%d",&a,&b); 
+
+    printf("\n %d %d",a*a,b*b);
+}
+
+-------------------------------------------------------------------------------------
+
+3) create a function that accept three argument 
+        perform addition of first two numbers if third argument is odd 
+        perform subtraction of first and second argument if third argument is even 
+        return final answer and then print in main 
+
+signature:  int myFun(int,int,int); 
+    return type 
+    name 
+    argument 
+
+    //logic
+    int myFun(int a,int b, int c){
+        if(c%2 == 0){
+            return a-b;
+        } else{
+            return a+b; 
+        }
+    }
+
+
+    main(){
+        int ans; 
+        ans = myFun(10,20,3);
+        printf("%d",ans); 
+
+        //or
+    
+        printf(" %d" , myFun(10,20,3));
+    }
+
+
+--------------------------------------------------------------------------------------
+
+Array --->
+
+    int a; //single value store 
+    a = 10; 
+
+
+    a = 20; //10 over write-> 20 
+    print("%d",a);//20 
+    10? No 
+
+Array -> is a collection of data 
+         is a collection of same type of data type 
+
+int a[5]; //a->5 copy -> 4byte*5 => 20 Byte 
+          //we can store 5 different values 
+
+   => a[0]  a[1] a[2] a[3] a[4]
+   => first -> 0th -> index 
+   => index start with 0 and ends with SIZE-1
+
+   a[0] = 10 
+   a[1] = 20 
+   a[2] = 30 
+
+
+   10? 20? 30? YES 
+
+
+int : 10 20 whole numbers  %d
+float : 10.20 real numbers %f 
+
+if i want to store gender { M , F } then which data type we need to take ? 
+character --> char  %c 
+
+char -> character -> you can store a single character 
+
+
+what if we want to store multiple characters ? 
+string ? 
+name ?
+address ? 
+
+ans : character Array 
+
+-------------------------------------------------------------------
