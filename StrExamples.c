@@ -98,9 +98,8 @@ void stringCopy()
 // str2 = edu
 // str3 = royaledu
 
-int main()
+void stringAppend()
 {
-
     int i, j;
     char str[100];
     char str2[100];
@@ -126,6 +125,9 @@ int main()
     // a 97 b 98   {32}
     printf("\nSTR = %s", str);
     printf("\nSTR2 = %s", str2);
+}
+int main()
+{
 
     return 0;
 }
