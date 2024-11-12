@@ -126,6 +126,87 @@ void stringAppend()
     printf("\nSTR = %s", str);
     printf("\nSTR2 = %s", str2);
 }
+
+void stringCompare()
+{
+    char str1[50];
+    char str2[50];
+    int len1 = 0;
+    int len2 = 0;
+    int i;
+    int same = 0;
+
+    printf("\nEnter two String");
+    gets(str1);
+    gets(str2);
+
+    for (i = 0; str1[i] != '\0'; i++)
+    {
+        len1++;
+    }
+
+    for (i = 0; str2[i] != '\0'; i++)
+    {
+        len2++;
+    }
+
+    if (len1 != len2)
+    {
+        printf("\nString are not same");
+        return;
+    }
+
+    for (i = 0; str1[i] != '\0'; i++)
+    {
+        if (str1[i] != str2[i])
+        {
+            same = 1;
+        }
+    }
+    if (same == 1)
+    {
+        printf("\nString are not same");
+    }
+    else
+    {
+        printf("\nString are same");
+    }
+}
+
+void stringCompare()
+{
+    char str1[50];
+    char str2[50];
+    int i, j;
+    int found = 0;
+
+    printf("\nenter main string");
+    gets(str1);
+
+    printf("\nenter search string");
+    gets(str2);
+
+    j = 0;
+    for (i = 0; str1[i] != '\0'; i++)
+    {
+
+        if (str1[i] == str2[j])
+        {
+            while (str1[i] == str2[j])
+            {
+                if (str2[j] == '\0')
+                {
+                    found = 1;
+                }
+                i++;
+                j++;
+            }
+            j=0;
+        }
+ 
+    }
+}
+
 int main()
 {
 

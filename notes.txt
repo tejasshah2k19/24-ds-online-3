@@ -276,4 +276,46 @@ char str[100];
 
 str => royal
 5 
------------------------------------------------------------------                    
+-----------------------------------------------------------------  
+concate 2 string 
+str reverse
+compare 2 str
+find substr
+insert substr in particular pos
+delete substr no of char from given str at particular pos
+
+----------------------------------------------------------
+
+compare 2 str
+
+str = "royal" 
+str2 = "royaledu"
+
+find length of both the string 
+if length are same then compare all the characters 
+if legth are not same then declare strings are not same 
+
+----------------------------------------------------------
+find substr -> 
+    royal education 
+    edu : Y 
+    al 
+    cation 
+    yal 
+    india : N 
+
+    royal can education 
+                   i
+    cat 
+       j 
+----------------------------------------------------------    
+str1 = "royal education"
+str2 = "india" 
+
+5th 
+royalindia education 
+
+
+royalindia education                  i
+
+------------------------------------------------------
