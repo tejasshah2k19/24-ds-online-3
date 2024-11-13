@@ -26,11 +26,22 @@ void display()
     }
 }
 
+void pop()
+{
+    if (top == -1)
+    {
+        printf("\nStack is Empty");
+    }
+    else
+    {
+        printf("\n %d pop", stack[top]);
+    }
+}
 int main()
 {
     int choice;
-    int data; 
-    while (1)//true --> infinite 
+    int data;
+    while (1) // true --> infinite
     {
         printf("\n1 For Push\n2 For Display\n3 For POP\n0 For Exit\nEnter choice");
         scanf("%d", &choice);
@@ -39,7 +50,7 @@ int main()
         {
         case 1:
             printf("\nEnter data");
-            scanf("%d",&data);
+            scanf("%d", &data);
             push(data);
             break;
         case 2:
