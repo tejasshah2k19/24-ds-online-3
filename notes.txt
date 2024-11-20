@@ -372,4 +372,42 @@ search < a[mid]
 
 -------------------------------------------------------
     
-    
+int a; // how many bytes occupied by a? 
+4 byte 
+
+
+when it will get deallocate ? release? free? 
+
+
+int main(){
+    //memory allocation implicitly  - static memory allocation 
+    int a; // 4 byte -> 
+
+    int x[5]; //20 byte 
+    //2 item -> 
+
+    //5 -> +2 
+}//end 
+
+
+DMA -> dynamic memory allocation 
+
+memory allocate -> 
+        calloc() 
+        malloc() 
+
+release -> 
+         free()
+
+re-size ->
+        realloc()
+
+
+pointer variable -> 
+int *a; // address - memory  
+
+//simple variable 
+int a; // automatically 4 byte 
+
+
+------------------------------------------------------------------------------        
