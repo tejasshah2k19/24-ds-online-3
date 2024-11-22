@@ -1,23 +1,48 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-
-struct movie{
+struct movie
+{
     char name[20];
-    int year; 
+    int year;
 
-}*m=NULL;
+} *m = NULL;
+
+void getData()
+{
+
+    // input
+}
+
+void printData()
+{
+
+    // display
+}
 
 int main()
 {
+    int choice;
+    while (1)
+    {
+        printf("\n0 For Exit");
+        printf("\n1 For New Movie");
+        printf("\n2 For List All Movie");
+        printf("\nEnter choice");
+        scanf("%d", &choice);
 
-    m = malloc(sizeof(struct movie));
-
-    printf("\nEnter name and year");
-    scanf("%s%d",&m->name,&m->year);
-
-    printf("\nMovieName : %s",m->name);
-    printf("\nYear : %d ",m->year); 
-
-    return 0; 
+        switch (choice)
+        {
+        case 1:
+            getData();
+            break;
+        case 2:
+            printData();
+            break;
+        case 0:
+            exit(0);
+        }
+    }
+    return 0;
 }
+// take 3 movie details and print it
