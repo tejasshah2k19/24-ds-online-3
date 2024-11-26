@@ -136,6 +136,35 @@ void delAny(int source)
 {
     // search
     // delete
+    int found = 0;
+    struct node *tmp, *p;
+
+    tmp = head;
+    while (tmp != NULL)
+    {
+        if (tmp->data == source)
+        {
+            found = 1;
+            break;
+        }
+        tmp = tmp->next;
+    }
+
+    if (found == 1)
+    {
+        p = head;
+        while (p->next != tmp)
+        {
+            p = p->next;
+        }
+
+        p->next = tmp->next;
+        free(tmp);
+    }
+    else
+    {
+        printf("\nInvalid data");
+    }
 }
 
 int main()
