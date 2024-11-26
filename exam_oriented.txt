@@ -1,0 +1,43 @@
+Tree 
+
+General Tree 
+Foreset 
+
+Binary Tree 
+    -> parent node 
+            min : 0 child 
+            max : 2 child 
+
+
+
+23,45,67,87,65,43,8
+create binary tree  from above data 
+
+
+98,76,54,32,34,56,78
+
+
+----------------------------------------------
+BST -> 
+Binary Search Tree : 
+                1) binary tree {min:0,max:2}
+                2) parent node -> small {left}
+                               -> big   {right}
+
+23,45,67,87,65,43,8 --> BST
+
+98,76,54,32,34,56,78 --> BST 
+
+1,2,3,4,5,6,7,8 --> BST 
+
+-----------------------------------------------
+
+Tree Travesal -->     
+        InOrder   left-root-right 
+        PreOrder  root-left-right  
+        PostOrder left-right-root 
+
+
+     InOrder -> 
+
+

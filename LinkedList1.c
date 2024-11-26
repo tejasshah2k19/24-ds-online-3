@@ -105,6 +105,39 @@ void insertAny(int source, int num)
         printf("\nSource Not found");
     }
 }
+
+void delBeg()
+{
+    struct node *tmp;
+
+    tmp = head;
+    head = head->next;
+    free(tmp);
+}
+
+void delLast()
+{
+    // del Last
+    struct node *p, *tmp;
+    tmp = last;
+
+    p = head;
+
+    while (p->next != last)
+    {
+        p = p->next;
+    }
+    p->next = NULL;
+    last = p;
+    free(tmp);
+}
+
+void delAny(int source)
+{
+    // search
+    // delete
+}
+
 int main()
 {
 
@@ -118,6 +151,10 @@ int main()
         printf("\n3 For Add Beg");
         printf("\n4 For Search");
         printf("\n5 For Insert Any");
+        printf("\n6 For Delete Any");
+        printf("\n7 For Delete Last");
+        printf("\n8 For Delete Beg");
+
         printf("\nEnter choice");
         scanf("%d", &choice);
 
