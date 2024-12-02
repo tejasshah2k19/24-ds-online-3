@@ -566,3 +566,183 @@ pass 3:		8	15	24	44	63	84	570	850
 
 Radix :-> 
         5   55  6   66  702     524     895     74  3 
+
+---------------------------------------------------------------------------------------
+
+Hashing -> 
+        
+--------------------------------------------------------------------------
+
+expression-> 
+
+a+b -> infix 
+	operator middle 
+
++ab => prefix 
+ab+ => postfix 
+
+
+infix to prefix 
+infix to postfix 
+
+
+infix to prefix using stack
+infix to postfix using stack
+
+
+infix to prefix 
+
+a+b
++ab 
+
+a+b+c 
++ab + c
+++abc 
+
+
+a+b-c+d 
++ab - c + d 
+-+abc + d
++-+abcd 
+
+
+
+a+b*c
+a + *bc 
++a*bc 
+
+a+b*c-d 
+
+-------------------------------------------------------------------------------------
+
+
+( ) 
+$ ^ [ right left ]
+/ * [ left right ]
++ - [ left right ]
+
+
+a+b*c-d/f 
+
+b*c 
+d/f 
+a+b 
+c-d 
+
+---------------------------------------------------------------------------
+a+b*c-d/f -> postfix using stack 
+
+---------------------------------------------------------------------------
+
+operator -> pop 
+operand  -> push 
+6,7,3,+,*,10,5,/,-
+
+
+input       stack 
+6           6 
+7           6,7
+3           6,7,3
++           6,10
+*           60
+10          60,10
+5           60,10,5
+/           60,2 
+-           58 
+ 
+ 58
+
+
+ infix to postfix -> 
+
+A*B^C+D
+
+Input   STACK   Postfix 
+A               A
+*       *       A
+B       *       AB
+^       *^      AB
+C       *^      ABC
++       +       ABC^*
+D       +       ABC^*D
+                ABC^*D+
+
+
+
+infix to postfix -> 
+(A/(B-C)*D+E)
+
+
+Input       Stack       Postfix 
+(           (           
+A           (           A
+/           (/          A
+(           (/(         A
+B           (/(         AB
+-           (/(-        AB
+C           (/(-        ABC
+)           (/          ABC-   [closing bracket pop till opening bracket ]
+*           (*          ABC-/  [ Same priorirty Operator POP ]
+D           (*          ABC-/D
++           (+          ABC-/D* [low priorirty operator POP ]
+E           (+          ABC-/D*E
+)                       ABC-/D*E+
+
+-----------------------------------------------------------------------------------
+
+A*(B*C+D*E)+F 
+
+Input       stack   Postfix
+A                   A
+*           *       A    [PUSH]
+(           *(      A
+B           *(      AB
+*           *(*     AB
+C           *(*     ABC
++           *(+     ABC* [POP]
+D           *(+     ABC*D 
+*           *(+*    ABC*D [PUSH]
+E           *(+*    ABC*DE 
+)           *       ABC*DE*+        
++           +       ABC*DE*+*
+F           +       ABC*DE*+*F
+                    ABC*DE*+*F+ 
+
+
+
+
+-----------------------------------------------------------------------------------
+
+Infix to Prefix  
+
+(A+(B*C)/(D-E))
+
+Input       Stack       Prefix
+)           )           
+)           ))          
+E           ))          E
+-           ))-         E
+D           ))-          DE
+(           )           -DE
+/           )/          -DE
+)           )/)         -DE
+C           )/)         C-DE
+*           )/)*        C-DE
+B           )/)*        BC-DE
+(           )/          *BC-DE
++           )+          /*BC-DE
+A           )+          A/*BC-DE
+(                       +A/*BC-DE 
+
+------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
